@@ -8,7 +8,7 @@ export default Ember.Route.extend({
             });
             user.save().then(() => {
                 let name = this.controller.get('name');
-                this.controller.set('message', 'A new user with the name ' + name + 'was added!');
+                this.controller.set('message', 'A new user with the name ' + name + ' was added!');
                 this.controller.set('name', null);
             },
             function() {
